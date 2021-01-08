@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+  <html>
+	<head>
+	<title> canvas tag tutorial </title>
+	<meta charset="UTF-8">
+	<style type="text/css" media="screen">
+	#canvas
+	{
+	background-color:green;
+	border:3px solid red;
+	width:250px;
+	height:200px;
+	}
+	
+	#canvas2
+	{
+	background-color:silver;
+	border:3px double blue;
+	width:250px;
+	height:200px;
+	}
+	
+	#canvas3
+	{
+	background-color:silver;
+	border:3px double blue;
+	width:250px;
+	height:200px;
+	}
+	
+	
+	#canvas5
+	{
+	background-color:silver;
+	border:3px double blue;
+	width:400px;
+	height:400px;
+	}
+	
+	</style>
+	</head>
+  <body>
+  <canvas id="canvas">
+  </canvas>
+  <canvas id="canvas2">
+  </canvas>
+  <canvas id="canvas3">
+  </canvas>
+  <canvas id="canvas4">
+  </canvas>
+  	<script type="text/javascript">
+  /*drow linear gradient in canvas.
+    createLinearGradient(x,y,x1,y1);
+    addColorStop(0,"color_value");
+    addColorStop(1,"color_value");
+    fillStyle or strokeStyle
+  */
+  	var can=document.getElementById("canvas");
+  	var jctx=can.getContext("2d");
+  	var jgrd=jctx.createLinearGradient(0,0,250,0);
+  	jgrd.addColorStop(0,"red");
+  	jgrd.addColorStop(1,"yellow");
+  // We have created a gradient and now be want to fill square/rectangle.	
+  	jctx.fillStyle=jgrd;
+  	jctx.fillRect(0,0,300,150);
+  	
+  	var can=document.getElementById("canvas2");
+  	var jctx=can.getContext("2d");
+  	var jgrd=jctx.createLinearGradient(0,0,0,300);
+  	jgrd.addColorStop(0,"red");
+  	jgrd.addColorStop(0.5,"yellow");
+  	
+  	jctx.fillStyle=jgrd;
+  	jctx.fillRect(0,0,300,290);
+  	// digonal rectangle
+  	
+  	var can=document.getElementById("canvas3");
+  	var jctx=can.getContext("2d");
+  	var jgrd=jctx.createLinearGradient(0,0,300,300);
+  	jgrd.addColorStop(0,"red");
+  	jgrd.addColorStop(0.5,"yellow");
+  	
+  	jctx.fillStyle=jgrd;
+  	jctx.fillRect(0,0,300,290);
+  	
+  	
+  	
+  	
+  	/*drow Radial gradient in canvas.
+  	createRadialGradient(x,y,r1,x1,y1,r2);
+  	addColorStop(0,"color_value");
+  	addColorStop(1,"color_value");
+  	fillStyle or strokeStyle
+  	*/
+  	var can2=document.getElementById("canvas4");
+  	var jctx2=can2.getContext("2d");
+  	var jgrd2=jctx2.createRadialGradient(90,80,1,150,100,100);
+  	jgrd2.addColorStop(0.3,"red");
+  	jgrd2.addColorStop(0.8,"blue");
+  	// We have created a gradient and now be want to fill square/rectangle.	
+  	jctx2.fillStyle=jgrd2;
+  	jctx2.fillRect(0,0,400,400);
+  	
+  </script>
+  </body>
+  </html>

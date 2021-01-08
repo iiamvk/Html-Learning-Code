@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>	positioning of element </title>
+<style type="text/css">
+div{
+background-color:red;
+color:yellow;
+width:100px;
+height:79px;
+border:3px double gray;
+}
+#div
+{
+position:static;
+}
+#div2
+{
+/* it give only to position top and
+left */
+position:fixed;
+top:80px;
+left:200px;
+/*it is a transparent of box 
+z-index:-1 to infinit,1 to infinit */
+z-index:-1;
+}
+#div3
+{
+/* pisition style is fixed
+give to top ,bottom,right,left */
+position:relative;
+top:10px;
+left:200px;
+}
+#div4
+{
+position:absolute;
+bottom:90px;
+right:80px;
+z-index:-2;
+}
+</style>
+</head>
+<body>
+<p> p is the paragraph tag it can use for 
+written paragraph in blog and artical <br/> br is a break tag use 
+in break for long sentence  </p>
+<p>
+<i> u can italic your word use to italicised tag i</i><br>
+<!-- static position is a default position 
+of element -->
+<div id="div1">
+static position
+</div><br>
+<!-- fixed position is fixed the element 
+in browser .(relative to browser window)-->
+<div id="div2">
+fixed position
+</div><br>
+<small> this is small tag used in text can small </small> <br>
+<!-- (relative postion to it's normal
+position) -->
+<div id="div3">
+Relative position
+</div><br>
+<p>wbr is unother break tag <wbr/> it used same in br tag </p>
+<!-- (relative to parent ) it parent to relative tag for 
+ex:- <body> <div> </div> </body> so div parent in
+body tag -->
+<div id="div4">
+Absolute position
+</div>
+<u> this is underline tag </u> <br>
+<small> this is small tag used in text can small </small> <br>
+<big> you write your word in biggest can use big tag </big><br>
+<mark> this is mark tag used in mark the special sentence  </mark><br>
+<del> this is deleted tag you can type wrong sentence can use del tag and cut the word </del><br>
+<ins> this is inserted tag it is same in underline tag </ins>
+</body>
+
+</html>

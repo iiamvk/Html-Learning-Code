@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> canvas tag tutorial </title>
+<meta charset="UTF-8">
+<style type="text/css" media="screen">
+#canvas
+{
+background-color:green;
+border:3px solid red;
+width:400px;
+height:300px;
+}
+
+#canvas2
+{
+background-color:silver;
+border:3px double blue;
+width:300px;
+height:150px;
+}
+</style>
+</head>
+<body>
+<img src="file/5.png" alt="img">
+<canvas id="canvas">
+</canvas>
+<canvas id="canvas2">
+</canvas>
+
+<script type="text/javascript">
+//rectangle drow in canvas
+var can=document.getElementById("canvas");
+var jctx=can.getContext("2d");
+var img=new Image();
+img.onload=function()
+{
+//drawImage(img,dx,dy);
+jctx.drawImage(img,3,3);
+//drawImage(img,dx,dy,dw,dh);
+jctx.drawImage(img,5,60,80,30);//minimize
+jctx.drawImage(img,100,65,139,59);//expanded
+//drawImage(img,sx,sy,sw,sh,dx,dy,dw,dh);
+jctx.drawImage(img,2,6,90,30,5,95,90,30);//cutting image
+jctx.drawImage(img,2,6,90,30,5,130,45,15);//cutting image in minimize
+jctx.drawImage(img,2,6,90,30,145,5,150,57);//cutting image in maximize
+}
+img.src="file/5.png";
+
+</script>
+</body>
+</html>

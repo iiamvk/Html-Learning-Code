@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title> TABLE IN HTML5</title>
+
+<style type="text/css">
+*{
+
+background-color:yellow;
+
+/*  Use the CSS border-collapse property to collapse cell borders.
+
+Use the CSS padding property to add padding to cells.
+
+Use the CSS text-align property to align cell text.
+
+Use the CSS border-spacing property to set the spacing between cells . */
+
+
+}
+.table
+{
+border:4px solid red;
+width:350px;
+height:45px;
+border-collapse:collapse;
+background-color:blue;
+padding:0px;
+margin:20px;
+}
+
+.table th,td
+{
+border:4px solid red;
+background-color:black;
+padding:20px;	
+margin:0px;
+text-align:center;
+font-family:times;
+}
+caption
+{
+padding:20px;
+font-family:times;
+font-size:2em;
+text-transform:uppercase;
+color:blue;
+
+}
+thead
+{
+color:gray;
+}
+tbody
+{
+color:red;
+}
+tfoot
+{
+color:orange;
+}
+
+
+
+</style>
+</head>
+<body>
+
+<!--you create a effective table then
+use table tag it include tr,th and td.
+tr= tr define by table rows, th= th define
+by table header and td= define by content
+of table data accroding to th.-->
+<table class="table">
+<!-- Use the HTML <caption> element to define a table caption  -->
+<caption> contact list  </caption>
+<!-- thead is table header-->
+<thead>
+<tr>
+<th>name</th><th>address</th><th>mobile number</th>
+</tr>
+</thead>
+
+
+<!-- tbody is a table body -->
+<tbody>
+<tr>
+<td>akshey</td><td>raipur</td><td> 9787564323</td>
+</tr>
+<tr><td>minos </td><td>kharora</td><td>7828364570</td>
+</tr>
+<tr><td>pkumar</td><td>heriyana</td><td>8465568090</td>
+</tr>
+</tbody>
+
+
+<!-- tfoot is a table footer -->
+<tfoot>
+
+<!-- Use the colspan attribute to make a cell span many columns  -->
+
+<tr><td colspan="3">total=1</td></tr>
+</tfoot>
+</table>
+
+
+<table class="table">
+<tr><th>name</th><th colspan="2">mobile number</th></tr>
+<tr><th>ashvani</th>
+<td>123456</td><td>12345678901</td></tr>
+</table>
+
+
+<table class="table">
+<tr><th>name</th><td colspan="2">vkumar</td></tr>
+
+<!-- Use the rowspan attribute to make a cell span many rows  -->
+
+<tr><th rowspan="2">mobile number</th><td>34567890</td>
+<td>345216790</td></tr>
+</table>
+
+
+
+
+
+</body>
+</html>

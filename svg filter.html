@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>	SVG Filter	</title>
+</head>
+<body>
+<svg id="svg" width="440" height="800" style="background-color:red;" >
+
+<!-- Blur image -->
+
+<defs>
+<filter id="fi" x="0" y="0">
+<feGaussianBlur in="SourceGraphic"
+stdDeviation="15" />
+
+</filter>
+</defs>
+<rect x="20" y="10" width="150" height="100" fill="yellow"
+stroke="green" stroke-width="5" filter="url(#fi)" />
+
+<!-- Offset Image -->
+
+<defs>
+<filter id="f1" x="0" y="0" width="150%" 
+height="150" >
+
+<feOffset in="SourceGraphic" 
+result="Offout" dx="25" dy="25" />
+
+<feBlend in="SourceGraphic" 
+in2="Offout" mode="normal"/>
+
+</filter>
+</defs>
+<rect x="20" y="130" width="150" height="100" 
+stroke="yellow" stroke-width="5"
+fill="blue" filter="url(#f1)" opacity="0.7"/>
+
+
+<!-- Offset image blur -->
+
+
+<defs>
+<filter id="f2" x="0" y="0" width="150%" 
+height="150" >
+
+<feOffset in="SourceGraphic" 
+result="Offout" dx="25" dy="25" />
+
+<feGaussianBlur 
+result="Gaiss"
+in="Offout"
+stdDeviation="10" />
+
+<feBlend in="SourceGraphic" 
+in2="Gaiss" mode="normal"/>
+
+</filter>
+</defs>
+<rect x="20" y="270" width="150" height="100" 
+stroke="silver" stroke-width="5"
+fill="yellow" filter="url(#f2)" opacity="0.7"/>
+
+<!--now make a shadow black  -->
+<defs>
+<filter id="f3" x="0" y="0" width="150%" 
+height="150" >
+
+<feOffset in="SourceAlpha" 
+result="Offout" dx="25" dy="25" />
+
+<feGaussianBlur 
+result="Gaiss"
+in="Offout"
+stdDeviation="10" />
+
+
+
+<feBlend in="SourceGraphic" 
+in2="Gaiss" mode="normal"/>
+
+</filter>
+</defs>
+<rect x="220" y="130" width="150" height="100" 
+stroke="yellow" stroke-width="5"
+fill="blue" filter="url(#f3)" opacity="0.7"/>
+
+<!-- now make shadow is colorfull -->
+
+
+<defs>
+<filter id="f4" x="0" y="0" width="150%" 
+height="150" >
+
+<feOffset in="SourceGraphic" 
+result="Offout" dx="25" dy="25" />
+
+<feColorMatrix result="matrix"
+in="Offout" type="matrix" 
+values="0.2 0 0 0 0 0 0.2 0 0 0 0 0 0.2 0 0 0 0 0 1 0" />
+
+<feGaussianBlur 
+result="Gaiss"
+in="matrix"
+stdDeviation="10" />
+
+
+
+<feBlend in="SourceGraphic" 
+in2="Gaiss" mode="normal"/>
+
+</filter>
+</defs>
+<rect x="220" y="270" width="150" height="100" 
+stroke="green" stroke-width="5"
+fill="yellow" filter="url(#f4)" opacity="1"/>
+
+
+ </svg>
+
+</body>
+
+</html>

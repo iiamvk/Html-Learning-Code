@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>	picture tag </title>
+</head>
+<body>
+<!-- the <picture> tag gives web developers
+more flexibility in specifying image resources.
+the <picture> element hold two different tags:one or more <source>
+tags and one <img>tag. -->
+<picture>
+<source srcset="file/4.jpg" media="(min-width:599px;)"/>
+<source srcset="file/5.jpg" media="(min-width:500px;)" />
+<img src="file/1.png" style="width:300px;" alt="image" />
+</picture>
+
+</body>
+
+</html>

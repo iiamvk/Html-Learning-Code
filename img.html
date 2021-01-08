@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title> image tag tutorial </title>
+
+<style type="text/css">
+
+#rightimg{
+
+width:80px;
+border:5px dotted blue;
+padding:5px;
+margin:5px;
+background-color:silver;
+float:right;
+}
+
+
+#leftimg{
+
+width:80px;
+border:5px dotted blue;
+padding:5px;
+margin:3px;
+background-color:silver;
+float:left;
+
+
+
+}
+
+#i3{
+width:300px;
+height:300px;
+padding:39px;
+margin:5px;
+background-color:pink;
+border:5px solid red;
+}
+
+
+</style>
+</head>
+<body>
+<!-- you can add image in our website then image
+tag. where alt(alternate)="image name" after load your webpage|
+it can'ot display your img then use alt tag.you can use your image 
+as a link then use title tag for imform user to this link.type it use to define 
+your|img type.-->
+
+<img id="rightimg" src="file/4.jpg" alt="pic1" />
+<br/>
+
+<img id="leftimg" src="file/6.jpg" alt="pic1" 
+style="align:right;"/>
+<br/>
+
+<img id="i3"  usemap="#mymap" alt="pic2"
+ src="file/1.png"  />
+ 
+<!-- you can use more then link in a one ima
+then use to define map and its area ,coords-->
+
+<map name="mymap">
+<!-- 
+you can create img link define area of shape it
+use rectangle,circle and poly.
+coords="left-top-right-bottom"
+circle="centerX-centerY-radius"
+poly="x1-y1-x2-y2-x3-y3-xn-yn"-->
+<area shape="rect" coords="0,0,150,300"	
+title="go to google" href="http://www.google.com"
+target="_blank"	alt="linked image1">
+
+<area shape="rect" coords="151,0,300,300"
+title="go to second page"	href="file"
+target="_blank"	alt="linked image2"/>
+</map>
+
+<!-- align="direction of image" hspace="horizontal spacing of element"
+vspace="vertical spacing of element" -->
+<img  src="file/6.jpg" alt="pic1" 
+ style="width:100px; height:100px; align:right;
+border:3px solid red; hspace:0px;
+vspace:10px; "  />
+<br/>
+
+
+</body>
+</html>

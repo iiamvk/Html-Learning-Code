@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>		svg text		</title>
+
+</head>
+
+<body>
+<svg style="width:300; height:400; background-color:yellow; border:3px solid red; " > 
+
+<!-- simple svg text -->
+<text x="20" y="50" style=" font-size:30px; font-family:times;  fill:red; opacity:0.5;" >vinod kumar </text>
+<!-- rotate svg text -->
+
+<text x="100" y="100" style=" font-size:30px; font-family:times;" fill="green" transform="rotate(30)" > vinod kumar </text>
+
+<!-- linked text in svg -->
+
+<a href="http://www.google.com" target="_blank" >
+<text x="30" y="250" style="font-size:20px; font-family:times; " >
+google.com
+</text> 
+</a>
+
+<!-- tgroup of text in svg -->
+
+<text x="20" y="290" style="fill:blue; font-size:25px; " >
+Hay i am vk 
+
+<tspan x="20" y="315" > how are you </tspan>
+
+<tspan x="20" y="340" > hallo i am vk </tspan>
+
+<tspan x="20" y="360" >  i am going to raipure </tspan>
+
+</text>
+
+
+</svg>
+<br>
+
+<svg>
+  <g fill="#2ebe6e">
+    <path d="M12.67,0H8.62L0,9V31.43H26.09V0H12.67ZM8.8,4.07l0,5L4,9.12ZM23.14,28.48H2.95V12.07L11.77,12l0-9.06h11.4V28.48h0Z"/>
+    <path d="M19.4,15.13H6.83a1,1,0,0,0,0,2H19.4A1,1,0,1,0,19.4,15.13Z"/>
+    <path d="M19.4,19.47H6.83a1,1,0,0,0,0,2H19.4A1,1,0,1,0,19.4,19.47Z"/>
+    <path d="M19.4,23.81H6.83a1,1,0,0,0,0,2H19.4A1,1,0,0,0,19.4,23.81Z"/>
+    <path d="M19,8.75a2.15,2.15,0,1,0-2.46,0A3.49,3.49,0,0,0,14.31,12h7A3.49,3.49,0,0,0,19,8.75Z"/>
+  </g>
+  <text x="32" y="13" style=" font-size:17px;   fill:red; opacity:1;" >Easy Resume</text>
+  <text x="32" y="30" style=" font-size:17px;   fill:red; opacity:1;" >Build</text>
+</svg>
+</body>
+</html>

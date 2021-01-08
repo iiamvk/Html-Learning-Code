@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> canvas tag tutorial </title>
+<meta charset="UTF-8">
+<style type="text/css" media="screen">
+#canvas
+{
+background-color:green;
+border:3px solid red;
+width:400px;
+height:300px;
+}
+
+#canvas2
+{
+background-color:silver;
+border:3px double blue;
+width:300px;
+height:150px;
+}
+</style>
+</head>
+<body>
+<!--HTML <canvas> element is used to draw graphics on a web page -->
+
+<canvas id="canvas">
+</canvas>
+<canvas id="canvas2">
+</canvas>
+
+<script type="text/javascript">
+//rectangle drow in canvas
+var can=document.getElementById("canvas");
+var jctx=can.getContext("2d");
+jctx.fillStyle="red";
+jctx.fillRect(10,10,100,40);//x-axis,y-axis,width,height
+
+// circle drow in canvas
+var vinod=document.getElementById("canvas");
+var kumar=vinod.getContext("2d");
+
+kumar.beginPath();
+//  x,y,r,start,stop.
+kumar.arc(135,30,20,0,7);
+kumar.lineWidth="5";
+kumar.strokeStyle='blue';
+kumar.stroke();
+
+
+// circle drow in canvas
+var vinod=document.getElementById("canvas2");
+var kumar=vinod.getContext("2d");
+//  x,y,r,start,stop.
+kumar.beginPath();
+kumar.arc(120,70,50,0,2*Math.PI);
+kumar.lineWidth="5";
+kumar.strokeStyle='blue';
+kumar.stroke();
+
+// circle drow in canvas
+var vinod=document.getElementById("canvas2");
+var kumar=vinod.getContext("2d");
+//  x,y,r,start,stop.
+kumar.beginPath();
+kumar.arc(95,60,5,0,2*Math.PI);
+kumar.lineWidth="5";
+kumar.strokeStyle='blue';
+kumar.stroke();
+
+// circle drow in canvas
+var vinod=document.getElementById("canvas2");
+var kumar=vinod.getContext("2d");
+//  x,y,r,start,stop.
+kumar.beginPath();
+kumar.arc(147,60,5,0,2*Math.PI);
+kumar.lineWidth="5";
+kumar.strokeStyle='blue';
+kumar.stroke();
+
+
+// circle drow in canvas
+var vinod=document.getElementById("canvas2");
+var kumar=vinod.getContext("2d");
+//  x,y,r,start,stop.
+kumar.beginPath();
+kumar.arc(120,55,50,1.2,1.96);
+kumar.lineWidth="5";
+kumar.strokeStyle='blue';
+kumar.stroke();
+
+//rectangle drow in canvas
+var can=document.getElementById("canvas2");
+var jctx=can.getContext("2d");
+jctx.fillStyle="blue";
+jctx.fillRect(116,60,8,20);//x-axis,y-axis,width,height
+
+
+// circle drow in canvas
+var vinod=document.getElementById("canvas2");
+var kumar=vinod.getContext("2d");
+//  x,y,r,start,stop.
+kumar.beginPath();
+kumar.arc(180,60,10,0,7);
+kumar.lineWidth="4";
+kumar.strokeStyle='blue';
+kumar.stroke();
+
+// circle drow in canvas
+var vinod=document.getElementById("canvas2");
+var kumar=vinod.getContext("2d");
+//  x,y,r,start,stop.
+kumar.beginPath();
+kumar.arc(60,60,10,0,7);
+kumar.lineWidth="4";
+kumar.strokeStyle='blue';
+kumar.stroke();
+
+// triangle drow by canvas
+var canvas=document.getElementById("canvas");
+var jsls=canvas.getContext("2d");
+jsls.moveTo(15,60);//x-position,y-potision
+jsls.lineTo(50,100);
+jsls.stroke();
+
+
+var can=document.getElementById("canvas");
+var jsls=can.getContext("2d");
+jsls.moveTo(50,100);
+jsls.lineTo(80,60);
+jsls.stroke();
+
+
+var can=document.getElementById("canvas");
+var jsls=can.getContext('2d');
+jsls.moveTo(80,60);
+jsls.lineTo(15,60);
+jsls.stroke();
+
+
+var canvas=document.getElementById("canvas");
+var jsls=canvas.getContext("2d");
+jsls.moveTo(170,100);
+jsls.lineTo(140,60);
+jsls.lineWidth="3";
+jsls.stroke();
+
+
+var can=document.getElementById("canvas");
+var jsls=can.getContext("2d");
+jsls.moveTo(140,60);
+jsls.lineTo(105,100);
+jsls.lineWidth="3";
+jsls.strokeStyle="yellow";
+jsls.stroke();
+
+
+var can=document.getElementById("canvas");
+var jsls=can.getContext('2d');
+jsls.moveTo(105,100);
+jsls.lineTo(170,100);
+jsls.lineWidth="3";
+jsls.stroke();
+
+
+// line drow by html in canvas 
+
+var can=document.getElementById("canvas");
+var jsls=can.getContext('2d');
+jsls.moveTo(175,60);
+jsls.lineTo(290,60);
+jsls.lineWidth="1";
+jsls.stroke();
+
+
+var can=document.getElementById("canvas");
+var jsls=can.getContext("2d");
+jsls.moveTo(175,70);
+jsls.lineTo(290,70);
+jsls.lineWidth="2";
+jsls.stroke();
+
+var can=document.getElementById("canvas");
+var jsls=can.getContext('2d');
+jsls.moveTo(175,80);
+jsls.lineTo(290,80);
+jsls.lineWidth="2";
+jsls.stroke();
+
+
+var can=document.getElementById("canvas");
+var jsls=can.getContext('2d');
+jsls.moveTo(175,90);
+jsls.lineTo(290,90);
+jsls.lineWidth="2";
+jsls.stroke();
+
+
+var can=document.getElementById("canvas");
+var jsls=can.getContext('2d');
+jsls.moveTo(175,100);
+jsls.lineTo(290,100);
+jsls.lineWidth="2";
+jsls.stroke();
+
+var can=document.getElementById("canvas");
+var jsls=can.getContext('2d');
+jsls.moveTo(175,110);
+jsls.lineTo(290,110);
+jsls.lineWidth="2";
+jsls.stroke();
+
+//add  text in canvas
+
+var can=document.getElementById("canvas");
+var jsls=can.getContext('2d');
+jsls.font="20px times ";
+jsls.fillStyle="red";
+jsls.strokeStyle="black";
+jsls.fillText("VINOD KUMAR",30,130);//x-p,y-p
+jsls.strokeText("VINOD KUMAR",28,132);
+jsts.stroke();
+</script>	
+</body>
+</html>

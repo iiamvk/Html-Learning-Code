@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<canvas id="myCanvas" width="300" height="250"
+style="border:1px solid black;
+background-color:grey; ">
+Your browser does not support the canvas element.
+</canvas>
+<script>
+
+var can=document.getElementById("myCanvas");
+var line=can.getContext("2d");
+line.moveTo(10,30);
+line.lineTo(180,30);
+line.moveTo(10,30);
+line.lineTo(60,120);
+line.moveTo(60,120);
+line.lineTo(250,120);
+line.moveTo(180,30);
+line.lineTo(250,120);
+line.lineWidth="4";
+line.strokeStyle="red";
+line.stroke();
+
+
+
+</script>
+</body>
+</html>

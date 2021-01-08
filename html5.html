@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>	New Html5 tutorial </title>
+<style type="text/css">
+body{
+background-color:red;
+padding:0px;
+margin:0px;
+font-family:times;
+text-align:center;
+}
+div{
+background-color:silver;
+margin:19px;
+padding:19px;
+width:950;
+height:600px;
+}
+#header1{
+background-color:blue;
+text-align:center;
+}
+#header1 h1{
+font-family:times;
+font-size:20px;
+color:red;
+text-align:center;
+padding:7px 0px 0px 0px;
+margin:2px;	
+/* vertical-align:middle,bottom,text-top,top,sub,supretc; it use line to vertical */
+vertical-align:middle;
+}
+#header1 #img
+{
+width:160px;
+hight:1590px;
+padding:0px;
+margin:5px 0px 10px 0px;
+border:3px double #ff5588;
+vertical-align:bottom;
+}
+#nav
+{
+background-color:black;
+border:2px solid yellow;
+margin:5px 0px 10px 0px;
+padding:0px;
+}
+#nav ul
+{
+list-style-type:none;
+}
+#nav ul li
+{
+padding:0px;
+/* display:inline,block-inline,block-table;*/
+display:inline;
+}
+#nav ul li a
+{
+color:green;
+text-decoration:none;
+border:2px double red;
+padding:0px;
+margin:0px 3px 0px 30px;
+background-color:lightblue;
+font-size:25px;
+}
+#aside 
+{
+background-color:pink;
+width:250px;
+height:270px;
+padding:0px;
+margin:0px;
+font-style:oblique;
+color:green;
+float:left;
+}
+
+#aside video
+{
+width:200px;
+height:200px;
+border:3px solid blue;
+}
+#article1
+{
+float:left;
+margin:5px 8px 0px 20px;
+width:300px;
+height:265px;
+background-color:gold;
+border:2px solid red;
+
+}
+#article2
+{
+background-color:green;
+color:pink;
+/*float:left,right,none;*/
+float:left;
+margin:5px 0px 0px 13px;
+width:300px;
+height:265px;
+border:2px solid red;
+}
+#f
+{
+/*clear:both,none,right,left;*/
+clear:both;
+color:red;
+background-color:gray;
+height:30px;
+text-transform:uppercase;
+/* line-height is a hight of text. it use text to center*/
+line-height:30px;
+}
+</style>
+</head>
+<body>
+<div id="div">
+<!-- header is a html5 tag use to define the header of page -->
+<header id="header1">
+<img id="img" src="file/7.png" alt="image"/>
+<h1 id="h1"> html5 tutorial in hindi </h1>
+</header>
+<!-- navigation(nav) is set of link to create a manu-->
+<nav id="nav">
+<ul>
+<li><a href="#" >home</a></li>
+<li><a href="#" >news</a></li>
+<li><a href="#" >image</a></li>
+<li><a href="#" >tutorial</a></li>
+<li><a href="#" >video</a></li>
+</ul>
+</nav>
+<!-- you can write a title page according
+your page it use aside tag-->
+<aside id="aside">
+<video controls src="file/video.mp4" >
+</video>
+<p> read your fevioret news </p>
+</aside>
+<!-- you can write different different 
+arricle in on page it define section tag-->
+<section id="section">
+<!-- article allowed to section -->
+<article id="article1">
+<header> <h2> basic of html page </h2> 
+<p>  html is a vary easy programing
+     language 
+</p>
+</header>
+<!-- footer is a description tag of html5-->
+<footer>by vinod kumar</footer>
+</article>
+<article id="article2">
+<header> <h1> basic of css page </h1> 
+<p> css is a vary easy programing
+     language 
+</p>
+</header>
+<footer>by vinod kumar</footer>
+</article>
+</section>
+<footer id="f">copywrite by vinod</footer>
+</div>
+</body>
+</html>

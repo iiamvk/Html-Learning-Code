@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<svg height="700" width="450" style=" background-color:yellow;">
+<path id="lineAB" d="M 100 350 l 150 -300" stroke="red" stroke-width="3" fill="none" />
+  <path id="lineBC" d="M 250 50 l 150 300" stroke="red" stroke-width="3" fill="none" />
+  <path d="M 175 200 l 150 0" stroke="green" stroke-width="3" fill="none" />
+  <path d="M 100 350 q 150 -300 300 0" stroke="blue" stroke-width="3" fill="none" />
+  <!-- Mark relevant points -->
+  
+  <g stroke="red" stroke-width="3" fill="red">
+    <circle id="pointA" cx="100" cy="350" r="3" />
+    <circle id="pointB" cx="250" cy="50" r="3" />
+    <circle id="pointC" cx="400" cy="350" r="3" />
+ </g> 
+  <!-- Label the points -->
+  <g font-size="30" font-family="times" fill="black" stroke="none" text-anchor="middle">
+    <text x="100" y="350" dx="-20">a</text>
+    <text x="250" y="50" dy="-10">b</text>
+    <text x="400" y="350" dx="20">c</text>
+  </g>
+  
+ <!-- draw path in absolute method where M,L and Z is absolute point -->
+ <path id="path" d="M100 370 L180 500 L30 500 Z" stroke="red" stroke-width="2" fill="none"/>
+ 
+ <!-- draw path by relative method where M And Z is absolute point and l is relative point in M. -->
+ <path id="path2" d="M280 370 l80 130 l-160 0 Z" stroke="red" stroke-width="2" fill="none" />
+ <path id="path3" d="M 100 670 l95 -130 l95 130 Z" stroke="red" stroke-width="2" fill="none" />
+
+  Sorry, your browser does not support inline SVG.
+</svg>
+
+</body>
+
+<!-- Mirrored from www.w3schools.com/svg/tryit.asp?filename=trysvg_path2 by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 13 Mar 2016 11:03:25 GMT -->
+</html>

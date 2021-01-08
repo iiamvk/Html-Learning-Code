@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>	select,option and label tag	</title>
+</head>
+<body>
+<form id="form" method="get" action="action_page.php"
+accept-charset="UTF-8" autocomplete="off" novalidate="novalidate" target="_blank" 
+
+oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+
+First name:<br/>
+<input type="text" name="firstname"
+value="vinod" />
+<br/>
+Last name:<br/>
+<input type="text" name="lastname"
+value="kumar" />
+<br/><br/>
+
+
+<button type="submit" name="subject"
+value="submit" > submit </button>
+
+<button type="reset" name="subject"
+value="submit" > reset </button>
+
+<button type="button" name="subject"
+value="submit" > click button </button>
+<br><br>
+
+<!--- datalist tag   -->
+
+<input list="browser" >
+<datalist id="browser" >
+<option value="IE" />
+<option value="Crome" /> 
+<option value="Opera" /> 
+</datalist>
+<br><br><br>
+
+<!-- keygen tag -->
+
+User name:<br>
+<input type="text" value="vinod" name="username" />
+<br>
+Encryption:
+<keygen name="security" >
+<br>
+<input type="submit" value="submit" />
+<br><br><br>
+<!-- output tag -->
+
+0<input type="range" id="a" value="50">100
++<input type="number" id="b" value="50">
+=<output name="x" for="a b"></output>
+
+
+</form>
+</body>
+</html>

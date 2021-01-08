@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<canvas id="myCanvas" width="300" height="250"
+style="border:1px solid black;
+background-color:grey; ">
+Your browser does not support the canvas element.
+</canvas>
+<script>
+// draw rectangle by canvas to createLinearGradient.
+
+var can=document.getElementById("myCanvas");
+var rect=can.getContext("2d");
+var lgrd=rect.createLinearGradient(0,0,300,250); //x,y,x1,y1
+lgrd.addColorStop(0,"red");
+lgrd.addColorStop(1,"yellow");
+rect.fillStyle=lgrd; 
+rect.fillRect(10,10,180,100); //rect(x,y,width,height)
+
+//draw rectangle by creatRadialcGradient.
+
+var can2=document.getElementById("myCanvas");
+var jrd=can2.getContext("2d");
+var rgrd=jrd.createRadialGradient(80,150,1,150,100,100);// x,y,r,x1,y1,r1
+rgrd.addColorStop(0.5,"green");
+rgrd.addColorStop(0.8,"yellow");
+jrd.fillStyle=rgrd;
+jrd.fillRect(10,130,180,100);
+
+</script>
+</body>
+</html>

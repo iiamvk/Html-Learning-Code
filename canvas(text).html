@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<canvas id="myCanvas" width="300" height="250"
+style="border:1px solid black;
+background-color:grey; ">
+Your browser does not support the canvas element.
+</canvas>
+<canvas id="Canvas" width="300" height="250"
+style="border:1px solid black;
+background-color:grey; ">
+Your browser does not support the canvas element.
+</canvas>
+<script>
+// draw rectangle by canvas
+
+var can=document.getElementById("myCanvas");
+var rect=can.getContext("2d");
+rect.font="30px times"; //size,font-family
+rect.fillStyle="red";
+rect.textAlign="center";
+rect.fillText("vinod kumar",can.width/2,can.height/2); //(text,width,height)
+rect.strokeStyle="blue";
+rect.strokeText("vinod kumar",can.width/2,can.height/2);
+rect.stroke();
+
+var can=document.getElementById("Canvas");
+var draw=can.getContext("2d");
+var img=new Image();
+img.onload=function()
+{
+draw.drawImage(img,10,10);//(img,x,y)
+draw.drawImage(img,10,70,170,80);//(img,x,y,width,height)
+draw.drawImage(img,15,10,70,60,10,170,130,100);
+}
+img.src="file/5.png";
+
+</script>
+</body>
+</html>

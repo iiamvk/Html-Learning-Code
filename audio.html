@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title> audio tag tutorial</title>
+<style type="text/css">
+
+div{
+background-color:pink;
+
+}
+#a1{
+background-color:red;
+width:260px;
+height:10px;
+padding:60px;
+margin:30px;
+}
+#a2{
+background-color:green;
+width:260px;
+height:13px;
+padding:60px;
+margin:30px;
+}
+
+</style>
+</head>
+<body>
+<!-- audio tag you can help to add audio in your 
+web page. you can use only in this formate in audio
+(MP3,Wav,and ogg) unother formate can'ot suport in html language-->
+<div id="a1">
+<audio preload="auto" loop	
+controls autoplay muted
+src="file/song.mp3" >
+</audio>
+</div>
+<br>
+<!-- preload="auto,none and metadata"
+loop is provided to repeat your audio 
+after end to automatic restart , controls is 
+importent content and you can mute your audio
+after load in web page it can use muted attribute,type
+is define for audio formate/ type-->
+<div id="a2">
+<audio controls autoplay preload="none" loop>
+<source src="file/song.mp3" type="audio/mp3">
+</audio>
+</div>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<canvas id="myCanvas" width="300" height="250"
+style="border:1px solid black;
+background-color:grey; ">
+Your browser does not support the canvas element.
+</canvas>
+<script>
+// draw image by useing simple arc.
+var can=document.getElementById("myCanvas");// find canvas element using DOM method.
+var jsdc=can.getContext("2d");//create a drawing	object .
+jsdc.beginPath(); //beginpath() function.
+jsdc.arc(80,70,55,0,7); //arc(x,y,r,start,stop)
+jsdc.strokeStyle="red"; //circle border color
+jsdc.lineWidth="5"; //circle border size
+jsdc.stroke();
+
+// draw image by using math formula.
+
+var can2=document.getElementById("myCanvas");
+var jsdc2=can2.getContext("2d");
+jsdc2.beginPath();
+jsdc2.arc(150,180,50,0,2*Math.PI);// maths function
+jsdc2.strokeStyle="green";
+jsdc2.lineWidth="5";
+jsdc2.stroke();
+</script>
+</body>
+
+</html>

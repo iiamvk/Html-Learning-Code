@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>	SVG Graphics Tutorial </title>
+<style type="text/css">
+#s
+{
+width:400px;
+height:300px;
+background-color:grey;
+border:3px solid black ;
+margin:10px;
+}
+
+#v
+{
+stroke:black;
+stroke-width:3px;
+}
+
+</style>
+</head>
+<body>
+<!-- svg is a programing language for describing
+2d graphics in xml
+3 types of object:-
+1,Vactor graphics and shapes.
+2,Images.
+3,Curves.
+
+fill="color_value" is used to color..
+stroke is used to boder of image and line width.-->
+
+<svg id="svg"	style="width:500px; height:400px; border:4px solid red; 
+background-color:#f000ff; margin:10px;" xmlns="http://www.w3.org/2000/svg">
+
+
+<!--draw rectangle by svg.
+<rect x=""	y="" width=""	height=""-->
+<rect id="rect" x="30" y="30" width="100" height="100" fill="blue"/>
+<rect id="rect1" x="30" y="140" width="100" height="100" fill="yellow"
+style="stroke:black;  stroke-width:6;"/>
+
+
+<!-- Draw circle by svg. -->
+<circle id="circle" cx="300" cy="150" r="100" fill="red"
+style="stroke:black; stroke-width:3px;"/>
+<circle id="circle1" cx="300" cy="150" r="80"  fill="green"
+style="stroke:black; stroke-width:3px;"/>
+<circle id="circle2" cx="300" cy="150" r="60"  fill="blue"
+style="stroke:black; stroke-width:3px;"/>
+<circle id="circle3" cx="300" cy="150" r="40"  fill="yellow"
+style="stroke:black; stroke-width:3px;"/>
+<circle id="circle4" cx="300" cy="150" r="20"  fill="pink"
+style="stroke:black; stroke-width:3px;"/>
+<circle id="circle5" cx="300" cy="150" r="10"  fill="red"
+style="stroke:black; stroke-width:3px;"/>
+
+
+<!-- Line draw by SVG.
+<line x1="" y1="" x2="" y2=""-->
+<line id="line" x1="0" y1="250" x2="150" y2="400"
+ style="stroke:black; stroke-width:8px;"/>
+ 
+ <line id="line1" x1="0" y1="270" x2="130" y2="400"
+ style="stroke:black; stroke-width:8px;"/>
+ 
+ <line id="line2" x1="0" y1="290" x2="110" y2="400"
+ style="stroke:black; stroke-width:8px;"/>
+ 
+ <line id="line3" x1="0" y1="310" x2="90" y2="400"
+ style="stroke:black; stroke-width:8px;"/>
+ 
+ <line id="line4" x1="0" y1="330" x2="70" y2="400"
+ style="stroke:black; stroke-width:8px;"/>
+
+<line id="line5" x1="0" y1="350" x2="50" y2="400"
+ style="stroke:black; stroke-width:8px;"/>
+ 
+ <line id="line6" x1="0" y1="370" x2="30" y2="400"
+ style="stroke:black; stroke-width:8px;"/>
+
+ <line id="line7" x1="0" y1="390" x2="10" y2="400"
+ style="stroke:black; stroke-width:8px;"/>
+ 
+ <!-- ellips draw by Svg 
+ -->
+ <ellipse id="ellipse" cx="300" cy="330" rx="100" ry="60" fill="white"
+ style="stroke:black; stroke-width:2px ;"/>
+ 
+ <ellipse id="ellipse2" cx="300" cy="330" rx="60" ry="40" fill="yellow"
+ style="stroke:black; stroke-width:2px ;"/>
+ 
+ <!-- polygon draw by SVG.
+ <polygon point="x1,y1  x2,y2	x3,y3" fill="color_value"
+ style="stroke:color_value; stroke-width:5px;"> 
+ <polyline points="x1,y1	x2,y2
+ x3,y3	x4,y4	x5,y5	x6,y6	x7,y7	x8,y8
+ x9,y9	x10,y10	x11,y11	 x12,y12" >
+ -->
+ 
+ <polygon points="450,30 400,130  500,130 " fill="silver"/>
+</svg>
+
+
+<svg id="s" xmlns="http://www.w3.org/2000/svg">
+
+<!--rectangle, circle, line, ellipse, polygon-->
+<rect  id="v1" x="150" y="30" width="100" height="100" fill="red"/>
+<circle id="v2" cx="200" cy="130" r="80" fill="yellow" />
+<line  x1="50" y1="180"  x2="340" y2="247" style="stroke:pink; stroke-width:8px;" />
+<ellipse id="v3" cx="200" cy="190" rx="50" ry="80" fill="white"/>
+<polygon id="v4" points="290,300 200,200 290,250" fill="rgb(200,0,200)"/>
+</svg>
+</body>
+
+</html>
